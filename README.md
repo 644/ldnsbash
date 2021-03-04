@@ -11,3 +11,6 @@ $ ldnsbash; echo "$LDNSBASH"
 ```
 
 It's important to have bash >4.0+ installed, along with bash-builtins.
+
+# License
+MIT
