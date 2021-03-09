@@ -12,7 +12,7 @@ int ldnsbash_builtin(list) WORD_LIST *list;
 
 	p = ldns_resolver_query(res, qry, LDNS_RR_TYPE_TXT, LDNS_RR_CLASS_CH, LDNS_RD);
 
-  /* bind to a bash global variable called $LDNSBASH */
+        /* bind to a bash global variable called $LDNSBASH */
 	if(p) bind_global_variable("LDNSBASH", ldns_pkt2str(p), 0);
 
 	ldns_rdf_deep_free(ldns_resolver_pop_nameserver(res));
