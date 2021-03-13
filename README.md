@@ -11,7 +11,7 @@ cd ldnsbash
 ```bash
 make
 ```
-#### Enable it
+#### Load the builtin into bash
 ```bash
 enable -f ./ldnsbash.so ldnsbash
 ```
